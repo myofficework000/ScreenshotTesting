@@ -11,7 +11,6 @@ Follow these steps to set up screenshot testing in your Jetpack Compose project.
 
 - **Android Studio**
 - **Kotlin**
-- **Jetpack Compose**
 - **JUnit**
 
 ### Dependencies
