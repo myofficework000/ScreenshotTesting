@@ -1,43 +1,54 @@
-# Screenshot Testing with Jetpack Compose UI
+# 📸 Screenshot Testing with Jetpack Compose UI
 
-This repository demonstrates how to implement screenshot testing for Jetpack Compose UI components using [Paparazzi](https://cashapp.github.io/paparazzi/). Screenshot testing ensures visual consistency by capturing and comparing UI screenshots.
+This repository demonstrates how to implement **screenshot testing** for Jetpack Compose UI using [**Paparazzi**](https://cashapp.github.io/paparazzi/).  
+Screenshot testing helps you detect **visual regressions** by comparing UI screenshots captured during tests. It is particularly useful for catching unintended design changes when working in teams or maintaining design consistency across releases.
 
+---
 
-## Getting Started
+## ✅ Why Screenshot Testing?
 
-Follow these steps to set up screenshot testing in your Jetpack Compose project.
+Unlike traditional unit tests, screenshot tests focus on the **UI appearance**, ensuring that the layout, spacing, colors, and typography remain visually consistent. This is essential for:
 
-### Prerequisites
+- Catching UI bugs before code reaches production
+- Verifying pixel-perfect implementations
+- Running fast, emulator-free UI checks in CI
 
-- **Android Studio**
-- **Kotlin**
-- **JUnit**
+---
 
-### Dependencies
+## 🧰 Prerequisites
 
-Add the following dependencies to your `build.gradle` file:
+Before you start, make sure your project uses:
+
+- ✅ Android Studio
+- ✅ Kotlin
+- ✅ Jetpack Compose
+- ✅ JUnit (for running tests)
+
+---
+
+## 📦 Adding Dependencies
+
+Update your `build.gradle` (Module: app) with the necessary test dependencies:
 
 ```kotlin
 dependencies {
-    // Paparazzi library
+    // Paparazzi core library
     testImplementation("app.cash.paparazzi:paparazzi:1.2.0")
 
-    // Robolectric for resource resolution
+    // Robolectric required for internal Android resource resolution
     testImplementation("org.robolectric:robolectric:4.11.1")
 
-    // Compose UI dependencies for testing
+    // Jetpack Compose dependencies
     implementation("androidx.compose.ui:ui:1.5.1")
     implementation("androidx.compose.material3:material3:1.2.1")
 }
-```
 
-## Setting Up Paparazzi
+## ⚙️ Setting Up Paparazzi
+Paparazzi renders Compose UI components in unit tests without requiring a device or emulator.
+It works by simulating an Android environment using Robolectric and capturing screenshots directly.
 
-Paparazzi is a tool for rendering Compose components in unit tests to produce screenshots. It simulates an Android environment, allowing for fast, consistent results without requiring an emulator.
-
-### Add Test Class
-
-Create a test class in the `src/test` folder:
+### 🧪 Creating a Screenshot Test
+Create a test class in the src/test/java/... directory:
 
 ```kotlin
 import app.cash.paparazzi.Paparazzi
@@ -65,7 +76,10 @@ fun WelcomeScreen() {
 }
 ```
 
-### Configuring Paparazzi
+This will render the WelcomeScreen() composable and save a screenshot for comparison.
+
+### 📲 Customizing the Device Configuration
+You can simulate different devices and screen sizes using deviceConfig:
 
 Paparazzi can emulate different devices and configurations. Customize it as needed:
 
@@ -76,6 +90,11 @@ val paparazzi = Paparazzi(
     renderingMode = Paparazzi.RenderingMode.NORMAL
 )
 ```
+
+Available rendering modes:
+- NORMAL: Default rendering
+- V_SCROLL: For vertically scrollable components
+- FULL: Renders full screen height
 
 ### Running Tests
 
