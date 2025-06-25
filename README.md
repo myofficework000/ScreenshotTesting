@@ -1,4 +1,4 @@
-# 📸 Screenshot Testing with Jetpack Compose UI
+# Screenshot Testing with Jetpack Compose UI
 
 This repository demonstrates how to implement **screenshot testing** for Jetpack Compose UI using [**Paparazzi**](https://cashapp.github.io/paparazzi/).  
 Screenshot testing helps you detect **visual regressions** by comparing UI screenshots captured during tests. It is particularly useful for catching unintended design changes when working in teams or maintaining design consistency across releases.
