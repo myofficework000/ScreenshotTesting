@@ -5,7 +5,7 @@ Screenshot testing helps you detect **visual regressions** by comparing UI scree
 
 ---
 
-## ✅ Why Screenshot Testing?
+## Why Screenshot Testing?
 
 Unlike traditional unit tests, screenshot tests focus on the **UI appearance**, ensuring that the layout, spacing, colors, and typography remain visually consistent. This is essential for:
 
