@@ -1,4 +1,4 @@
-name: AndroidCI
+name: workflows
 
 on:
 push:
