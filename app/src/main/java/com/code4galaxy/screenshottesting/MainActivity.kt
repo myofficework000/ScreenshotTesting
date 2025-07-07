@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
             ScreenshotTestingTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     WelcomeScreen(
+                        modifier = Modifier.padding(innerPadding),
                         onSignInSignUp = { /* TODO */ },
                         onSignInAsGuest = { /* TODO */ },
                     )
