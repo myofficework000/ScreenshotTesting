@@ -19,11 +19,12 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun WelcomeScreen(
+    modifier: Modifier = Modifier,
     onSignInSignUp: () -> Unit,
     onSignInAsGuest: () -> Unit
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxSize()
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
@@ -53,8 +54,11 @@ fun WelcomeScreen(
     }
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 private fun WelcomeScreenPreview() {
-    WelcomeScreen({}, {})
+    WelcomeScreen(
+        onSignInSignUp = {},
+        onSignInAsGuest = {}
+    )
 }
