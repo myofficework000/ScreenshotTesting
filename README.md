@@ -1,5 +1,10 @@
 # Screenshot Testing with Jetpack Compose UI ..
 
+![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
+![GitHub repo size](https://img.shields.io/github/repo-size/myofficework000/ScreenshotTesting)  
+![GitHub stars](https://img.shields.io/github/stars/myofficework000/ScreenshotTesting?style=social)  
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
+
 This repository demonstrates how to implement **screenshot testing** for Jetpack Compose UI using [**Paparazzi**](https://cashapp.github.io/paparazzi/).  
 Screenshot testing helps you detect **visual regressions** by comparing UI screenshots captured during tests. It is particularly useful for catching unintended design changes when working in teams or maintaining design consistency across releases.
 
