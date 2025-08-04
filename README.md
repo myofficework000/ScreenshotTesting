@@ -1,4 +1,4 @@
-# Screenshot Testing with Jetpack Compose UI ..
+# Screenshot Testing with Jetpack Compose UI 
 
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 ![GitHub repo size](https://img.shields.io/github/repo-size/myofficework000/ScreenshotTesting)  
@@ -49,7 +49,7 @@ dependencies {
 }
 ```
 
-## ⚙️ Setting Up Paparazzi
+## Setting Up Paparazzi
 Paparazzi renders Compose UI components in unit tests without requiring a device or emulator.
 It works by simulating an Android environment using Robolectric and capturing screenshots directly.
 
