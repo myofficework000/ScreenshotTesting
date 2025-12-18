@@ -1,4 +1,4 @@
-# Screenshot Testing with Jetpack Compose
+# Screenshot Testing
 
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 ![GitHub repo size](https://img.shields.io/github/repo-size/myofficework000/ScreenshotTesting)  
