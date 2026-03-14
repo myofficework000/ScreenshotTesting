@@ -17,6 +17,7 @@ Unlike traditional unit tests, screenshot tests focus on the **UI appearance**, 
 - Catching UI bugs before code reaches production
 - Verifying pixel-perfect implementations
 - Runs faster, emulator-free UI checks in CI
+- 
 
 ---
 
